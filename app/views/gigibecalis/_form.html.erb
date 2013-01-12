@@ -1,0 +1,21 @@
+<%= form_for(@gigibecali) do |f| %>
+  <% if @gigibecali.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gigibecali.errors.count, "error") %> prohibited this gigibecali from being saved:</h2>
+
+      <ul>
+      <% @gigibecali.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :antena1 %><br />
+    <%= f.text_field :antena1 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

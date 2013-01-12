@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  threadId: 1
+  userId: 1
+  content: MyString
+  postStatus: 1
+  dateAndTime: 2013-01-12 05:18:55
+
+two:
+  id: 1
+  threadId: 1
+  userId: 1
+  content: MyString
+  postStatus: 1
+  dateAndTime: 2013-01-12 05:18:55

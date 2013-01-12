@@ -1,0 +1,23 @@
+<h1>Listing gigibecalis</h1>
+
+<table>
+  <tr>
+    <th>Antena1</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gigibecalis.each do |gigibecali| %>
+  <tr>
+    <td><%= gigibecali.antena1 %></td>
+    <td><%= link_to 'Show', gigibecali %></td>
+    <td><%= link_to 'Edit', edit_gigibecali_path(gigibecali) %></td>
+    <td><%= link_to 'Destroy', gigibecali, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gigibecali', new_gigibecali_path %>
